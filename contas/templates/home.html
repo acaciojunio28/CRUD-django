@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Lista</h1>
+<ul>
+     {%for lista in litagem%}
+    <li>
+        <p>nome:{{lista.nome}}</p>
+    </li>
+    <li>
+        <p> valor:{{lista.valor}}</p>
+    </li>
+    <li>
+        <p>unidade:{{lista.unidade}}</p>
+    </li>
+    <li>
+        <a href="\update\{{lista.id}}">Editar</a>|<a href="\delete\{{lista.id}}">Deletar</a>
+    </li>
+    <hr>
+    {%endfor%}
+
+</ul>
+<a href="\form">Cadastrar</a>
+
+</body>
+</html>
